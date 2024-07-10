@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+</head>
+<body>
+
+  <div class="container grid card">
+    
+    
+    <div class="mortgage-calculator">
+      <form id="mortgage-form">
+      <div class="wrapper">
+
+ 
+      <header class="flex">
+        <h1 class="title">Mortgage Calculator</h1>
+        <input type="reset" value="clear all" class="reset">
+      </header>
+
+        <div class="input-field">
+
+          <h3 class="input-heading">Mortgage Amount</h3>
+          <div class="input__container flex">
+            <div>£</div>
+            <input type="number" placeholder = "">
+          </div>
+        </div>
+
+          <div class="middle input-field">
+        <div>
+          <h3 class="input-heading">Mortgage Type</h3>
+          <div class="input__container flex">
+            <div>l</div>
+            <input type="number" placeholder ="" id="in1">
+          </div>
+        </div>
+
+        <div>
+
+          <h3 class="input-heading">Interest Rate</h3>
+          <div class="input__container flex">
+            <div>l</div>
+            <input type="number" placeholder = "" id="in2">
+          </div>
+        </div>
+
+        </div>
+        <div class="mortgage-type">
+          <h3 class="input-heading">Mortgage Type</h3>
+
+          <div class="type">
+            <input type="radio" id="repayment">
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="interest">
+            <label for="repayment">Interest Only</label>
+          </div>
+
+        </div>
+
+        <div class="submit-form my-3">
+          <button><img src="assets/images/icon-calculator.svg" alt="">Calculate Repayment</button>
+        </div>
+
+
+      </div>
+    </form>
+     </div>
+  
+      <div class="mortgage-results">
+        <h1 class="title my-1">Your results</h1>
+        <p class="my-2">  Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.
+        </p>
+
+        <div class="repayments">
+          <p class="">Your monthly repayments</p>
+          
+          <div class="repayment-value">
+            <h1>£1,797.94</h1>
+          </div>
+
+          <div class="long-term">
+              <p>  Total you'll repay over the term</p>
+              <h2>£539,322.94</h2>
+          </div>
+      
+        </div>
+ 
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Liym-ntai Ray</a>.
+  </div> -->
+</body>
+</html>

@@ -1,0 +1,144 @@
+@font-face {
+    src: url('../assets/fonts/static/PlusJakartaSans-Medium.ttf');
+    font-family: 'PlusJakartaSans-Medium.ttf';
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'PlusJakartaSans-Medium.ttf';
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(249, 255, 255);
+}
+header{
+    margin-bottom: 2rem;
+}
+header.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: #0d212e;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.mortgage-calculator,.mortgage-results{
+    padding: 40px;
+}
+
+.mortgage-calculator .reset{
+    color: #494949;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid #aaa;
+}
+.mortgage-results{
+    background-color: hsl(203, 34%, 15%);
+    color: #fff;
+}
+.input__container{
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+input[type="number"]{
+width: 100%;
+}
+.middle input[type="number"]{
+    font-weight: 600;
+}
+input{
+    border: none;
+    padding: 0 10px;
+}
+.input-heading{
+font-size: 13px;
+color: #4d5a5c;
+margin-bottom: 10px;
+}
+.input-field .flex{
+    justify-content: flex-start;
+}
+input:focus{
+    outline: none;
+}
+
+.input__container > *:first-child{
+    padding: 6px 10px;
+    background-color: #8cacd6c0;
+}
+.middle{
+    display: flex;
+    gap: 30px;
+}
+
+.mortgage-type .type{
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    padding: 8px 13px;
+    font-weight: 600;
+}
+.mortgage-type .type>*:first-child{
+    margin-right: 5px;
+}
+
+.submit-form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    background-color: #c1c42d;
+}
+.submit-form button:hover{
+    background-color: #d1d350;
+    cursor: pointer;
+}
+
+/* Mortgage results */
+.mortgage-results{
+    border-bottom-left-radius: 100px;
+}
+.mortgage-results .title{
+    color: #ddd;
+}
+.mortgage-results p{
+    color: #71949c;
+}
+.mortgage-results .repayments{
+    border-top: #c1c42d 3px solid;
+    border-radius: 5px;
+    padding: 20px;   
+    background-color: darkslategray;
+}
+.mortgage-results .repayment-value{
+    border-bottom: #0d212e 1px solid;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.mortgage-results .repayment-value h1{
+    color: #c1c42d;
+    font-size: 2rem;
+}
+.repayments{
+    margin-bottom: 30px;
+}
+.repayments p{
+    margin-bottom: 10px;
+}
+.long-term p{
+    margin-bottom: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
