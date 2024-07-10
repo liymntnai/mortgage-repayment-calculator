@@ -39,10 +39,6 @@ header.flex{
     cursor: pointer;
     border-bottom: 1px solid #aaa;
 }
-.mortgage-results{
-    background-color: hsl(203, 34%, 15%);
-    color: #fff;
-}
 .input__container{
     border: 1px solid #333;
     border-radius: 3px;
@@ -107,7 +103,10 @@ input:focus{
 
 /* Mortgage results */
 .mortgage-results{
+    background-color: hsl(203, 34%, 15%);
+    color: #fff;
     border-bottom-left-radius: 100px;
+    height: 100%;
 }
 .mortgage-results .title{
     color: #ddd;
